@@ -74,11 +74,36 @@ img { max-width: 100%; height: auto; }
 }
 
 /* product description tables (rendered from WP excerpt HTML) */
-.product-desc table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 13px; }
+.product-desc { color: #a92727; font-size: 14px; }
+.product-desc table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1rem 0;
+  background: #d7d8d9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.product-desc table tr { background: #fff5f0; }
+.product-desc table tr:first-child { background: #cccccc; }
 .product-desc table td,
-.product-desc table th { padding: 6px 10px; vertical-align: top; }
-.product-desc h2:empty { display: none; }
-.product-desc img { display: block; margin: 1rem auto; }
+.product-desc table th {
+  padding: 10px 14px;
+  vertical-align: middle;
+  border: none;
+  color: #a92727;
+}
+.product-desc table strong { color: #a92727; font-weight: 600; }
+.product-desc h2:empty,
+.product-desc h3:empty,
+.product-desc h4:empty { display: none; }
+.product-desc h2 { font-size: 22px; margin-top: 1rem; color: #a92727; }
+.product-desc h3 { font-size: 16px; margin-top: 0.75rem; color: #a92727; }
+.product-desc h4 { font-size: 15px; margin-top: 0.75rem; color: #a92727; }
+.product-desc p { margin: 0.5rem 0; }
+.product-desc img { display: block; margin: 1rem auto; max-width: 100%; }
+.product-desc a { color: #a92727; text-decoration: underline; }
+.product-desc a:hover { color: #d54242; }
 
 /* container helper */
 .container-cmx { max-width: 1280px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; }

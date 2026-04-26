@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { products, productBySlug, categoryBySlug } from "@/lib/products";
+import { products, productBySlug, categoryBySlug, categoryById } from "@/lib/products";
 import { WHATSAPP_URL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/contact";
 
 export function generateStaticParams() {
@@ -31,6 +31,11 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const cat = categoryBySlug[product.mainCategorySlug];
+  const subCat = cat
+    ? product.categoryIds
+        .map((id) => categoryById[id])
+        .find((c) => c && c.parent === cat.id)
+    : undefined;
 
   return (
     <article className="container-cmx py-8">
@@ -46,6 +51,17 @@ export default async function ProductPage({
               className="hover:text-brand"
             >
               {cat.name}
+            </Link>
+            <span className="mx-2">/</span>
+          </>
+        ) : null}
+        {subCat ? (
+          <>
+            <Link
+              href={`/categoria-producto/${cat?.slug}/${subCat.slug}/`}
+              className="hover:text-brand"
+            >
+              {subCat.name}
             </Link>
             <span className="mx-2">/</span>
           </>
@@ -74,7 +90,7 @@ export default async function ProductPage({
           </h1>
 
           <div
-            className="prose prose-sm max-w-none product-spec"
+            className="product-desc"
             dangerouslySetInnerHTML={{ __html: product.excerptHtml }}
           />
 
