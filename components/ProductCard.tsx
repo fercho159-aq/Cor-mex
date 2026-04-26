@@ -4,7 +4,7 @@ import type { Product } from "@/lib/types";
 export default function ProductCard({ product }: { product: Product }) {
   const href = `/producto/${product.slug}/`;
   return (
-    <li className="product group bg-white border border-[#e5e5e5] hover:shadow-md transition-shadow flex flex-col">
+    <li className="product group bg-white flex flex-col">
       <Link href={href} className="block relative overflow-hidden aspect-square bg-white">
         {product.image.src ? (
           <img

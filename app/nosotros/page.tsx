@@ -58,13 +58,13 @@ export default function NosotrosPage() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-block bg-[#25d366] hover:bg-[#1da851] text-white font-medium px-8 py-3 rounded-md transition-colors"
+              className="inline-block bg-[#25d366] hover:bg-[#1da851] text-white! font-medium px-8 py-3 rounded-md transition-colors"
             >
               WhatsApp
             </a>
             <a
               href={`tel:${PHONE_TEL}`}
-              className="inline-block bg-[#0d6efd] hover:bg-[#0b5ed7] text-white font-medium px-8 py-3 rounded-md transition-colors"
+              className="inline-block bg-[#0d6efd] hover:bg-[#0b5ed7] text-white! font-medium px-8 py-3 rounded-md transition-colors"
             >
               Llámanos
             </a>
