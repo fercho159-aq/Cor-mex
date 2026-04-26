@@ -20,10 +20,11 @@ export const TOP_CATEGORIES: Category[] = TOP_CATEGORY_SLUGS
   .map((s) => categoryBySlug[s])
   .filter((c): c is Category => Boolean(c));
 
+const naturalCollator = new Intl.Collator("es", { numeric: true, sensitivity: "base" });
+
 export function productsInCategory(catSlug: string): Product[] {
   const cat = categoryBySlug[catSlug];
   if (!cat) return [];
-  // collect this cat + descendants
   const ids = new Set<number>([cat.id]);
   let added = true;
   while (added) {
@@ -35,7 +36,9 @@ export function productsInCategory(catSlug: string): Product[] {
       }
     }
   }
-  return products.filter((p) => p.categoryIds.some((id) => ids.has(id)));
+  return products
+    .filter((p) => p.categoryIds.some((id) => ids.has(id)))
+    .sort((a, b) => naturalCollator.compare(a.title, b.title));
 }
 
 export function productBySlug(slug: string): Product | undefined {

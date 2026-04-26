@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import Link from "next/link";
 import { productsInCategory } from "@/lib/products";
-import { WHATSAPP_URL } from "@/lib/contact";
 
 export default function Home() {
   const cortadoras = productsInCategory("cortadoras-2").slice(0, 5);
@@ -51,9 +50,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Banner 2 — precio más bajo */}
+      {/* Banner — Somos Fabricantes */}
       <section
-        className="text-white text-center py-12 px-4"
+        className="text-white text-center py-16 px-4"
         style={{
           backgroundColor: "#1a2980",
           backgroundImage:
@@ -61,25 +60,12 @@ export default function Home() {
           backgroundSize: "20px 20px",
         }}
       >
-        <p className="text-[32px] md:text-[40px] font-light tracking-wide mb-8">
+        <h2 className="text-[44px] md:text-[64px] font-medium leading-tight mb-3">
+          Somos Fabricantes
+        </h2>
+        <p className="text-[22px] md:text-[32px] font-light tracking-wide">
           Garantizamos el precio más bajo de México
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="tel:5525181256"
-            className="inline-block bg-[#007aff] hover:bg-[#0062cc] text-white font-medium px-10 py-3 text-[20px] transition-colors"
-          >
-            Llámanos
-          </a>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block bg-[#25d366] hover:bg-[#1da851] text-white font-medium px-10 py-3 text-[20px] transition-colors"
-          >
-            WhatsApp
-          </a>
-        </div>
       </section>
 
       {/* Cizallas */}
