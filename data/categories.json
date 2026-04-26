@@ -1,0 +1,121 @@
+[
+  {
+    "id": 15,
+    "name": "Otros productos",
+    "slug": "sin-categorizar",
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "id": 77,
+    "name": "Cizallas",
+    "slug": "cizallas",
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "id": 78,
+    "name": "Azar",
+    "slug": "azar",
+    "parent": 77,
+    "description": ""
+  },
+  {
+    "id": 79,
+    "name": "Cormex",
+    "slug": "cormex",
+    "parent": 77,
+    "description": ""
+  },
+  {
+    "id": 80,
+    "name": "Trebol",
+    "slug": "trebol",
+    "parent": 77,
+    "description": ""
+  },
+  {
+    "id": 82,
+    "name": "Cortadoras Eléctricas",
+    "slug": "cortadoras-electricas",
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "id": 83,
+    "name": "Cormex",
+    "slug": "cormex-cortadoras-electricas",
+    "parent": 82,
+    "description": ""
+  },
+  {
+    "id": 84,
+    "name": "Dobladoras",
+    "slug": "dobladoras",
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "id": 86,
+    "name": "Azar",
+    "slug": "azar-dobladoras",
+    "parent": 84,
+    "description": ""
+  },
+  {
+    "id": 87,
+    "name": "Cormex",
+    "slug": "cormex-dobladoras",
+    "parent": 84,
+    "description": ""
+  },
+  {
+    "id": 88,
+    "name": "Punzonadoras",
+    "slug": "punzadoras",
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "id": 89,
+    "name": "Azar",
+    "slug": "azar-punzadoras",
+    "parent": 88,
+    "description": ""
+  },
+  {
+    "id": 90,
+    "name": "Cormex",
+    "slug": "cormex-punzadoras",
+    "parent": 88,
+    "description": ""
+  },
+  {
+    "id": 92,
+    "name": "Cortadoras",
+    "slug": "cortadoras-2",
+    "parent": 0,
+    "description": ""
+  },
+  {
+    "id": 93,
+    "name": "Cormex",
+    "slug": "cormex-cortadoras-2",
+    "parent": 92,
+    "description": ""
+  },
+  {
+    "id": 94,
+    "name": "Azar",
+    "slug": "azar-cortadoras-2",
+    "parent": 92,
+    "description": ""
+  },
+  {
+    "id": 95,
+    "name": "Trebol",
+    "slug": "trebol-cortadoras-2",
+    "parent": 92,
+    "description": ""
+  }
+]
