@@ -2,9 +2,10 @@ import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import Link from "next/link";
 import { productsInCategory } from "@/lib/products";
+import { WHATSAPP_URL, PHONE_TEL } from "@/lib/contact";
 
 export default function Home() {
-  const cortadoras = productsInCategory("cortadoras-2").slice(0, 5);
+  const cortadoras = productsInCategory("cormex-cortadoras-2").slice(0, 5);
   const cizallas = productsInCategory("cizallas").slice(0, 20);
   const dobladoras = productsInCategory("dobladoras").slice(0, 2);
   const punzadoras = productsInCategory("punzadoras").slice(0, 2);
@@ -63,9 +64,25 @@ export default function Home() {
         <h2 className="text-[44px] md:text-[64px] font-medium leading-tight mb-3">
           Somos Fabricantes
         </h2>
-        <p className="text-[22px] md:text-[32px] font-light tracking-wide">
+        <p className="text-[22px] md:text-[32px] font-light tracking-wide mb-8">
           Garantizamos el precio más bajo de México
         </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a
+            href={`tel:${PHONE_TEL}`}
+            className="inline-block bg-[#0d6efd] hover:bg-[#0b5ed7] text-white font-medium px-10 py-3 text-[18px] transition-colors"
+          >
+            Llámanos
+          </a>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-[#25d366] hover:bg-[#1da851] text-white font-medium px-10 py-3 text-[18px] transition-colors"
+          >
+            WhatsApp
+          </a>
+        </div>
       </section>
 
       {/* Cizallas */}
