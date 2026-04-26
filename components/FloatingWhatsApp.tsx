@@ -7,7 +7,7 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noreferrer"
       aria-label="Cotiza al momento aquí — Contactar por WhatsApp"
-      className="fixed right-5 bottom-5 z-50 flex items-center gap-3 bg-[#25d366] hover:bg-[#1ebe57] text-white pl-4 pr-5 py-3 rounded-full shadow-lg transition-colors"
+      className="fixed right-5 bottom-5 z-50 flex items-center gap-3 bg-[#25d366] hover:bg-[#1ebe57] text-white! pl-4 pr-5 py-3 rounded-full shadow-lg transition-colors"
     >
       <svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true">
         <path

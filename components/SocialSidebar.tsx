@@ -6,7 +6,7 @@ export default function SocialSidebar() {
         target="_blank"
         rel="noreferrer"
         aria-label="Facebook"
-        className="flex items-center justify-center w-9 h-9 text-white text-[18px] transition-opacity hover:opacity-80"
+        className="flex items-center justify-center w-9 h-9 text-white! text-[18px] transition-opacity hover:opacity-80"
         style={{ background: "#3b5998" }}
       >
         <i className="thehanger-icons-facebook-f" />
@@ -16,7 +16,7 @@ export default function SocialSidebar() {
         target="_blank"
         rel="noreferrer"
         aria-label="Instagram"
-        className="flex items-center justify-center w-9 h-9 text-white text-[18px] transition-opacity hover:opacity-80"
+        className="flex items-center justify-center w-9 h-9 text-white! text-[18px] transition-opacity hover:opacity-80"
         style={{
           background:
             "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",

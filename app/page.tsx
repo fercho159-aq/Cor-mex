@@ -154,7 +154,7 @@ function VerMasBtn({ href }: { href: string }) {
   return (
     <Link
       href={href}
-      className="inline-block bg-brand hover:bg-brand-hover text-white font-medium px-8 py-3 text-[14px] uppercase tracking-wide transition-colors"
+      className="inline-block bg-brand hover:bg-brand-hover text-white! font-medium px-8 py-3 text-[14px] uppercase tracking-wide transition-colors"
     >
       Ver más
     </Link>
