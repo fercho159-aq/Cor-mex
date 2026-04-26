@@ -70,7 +70,7 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-4">
           <a
             href={`tel:${PHONE_TEL}`}
-            className="inline-block bg-[#0d6efd] hover:bg-[#0b5ed7] !text-white font-bold px-10 py-3 text-[18px] transition-colors"
+            className="inline-block bg-[#0d6efd] hover:bg-[#0b5ed7] text-white! font-medium px-10 py-3 text-[18px] transition-colors"
           >
             Llámanos
           </a>
@@ -78,7 +78,7 @@ export default function Home() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="inline-block bg-[#25d366] hover:bg-[#1da851] !text-white font-bold px-10 py-3 text-[18px] transition-colors"
+            className="inline-block bg-[#25d366] hover:bg-[#1da851] text-white! font-medium px-10 py-3 text-[18px] transition-colors"
           >
             WhatsApp
           </a>

@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="mt-8">
             <Link
               href="/categoria-producto/cortadoras-electricas/"
-              className="inline-block bg-[#ff3a2d] hover:bg-[#e02a1d] !text-white font-bold px-10 py-4 text-[18px] transition-colors"
+              className="inline-block bg-[#ff3a2d] hover:bg-[#e02a1d] text-white! font-medium px-10 py-4 text-[18px] transition-colors"
             >
               Ver más
             </Link>

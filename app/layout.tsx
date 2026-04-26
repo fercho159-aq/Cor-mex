@@ -11,11 +11,14 @@ export const metadata: Metadata = {
   title: "CORMEX - Fabricación y comercialización de Cizallas, Dobladoras, Cortadoras y Punzonadoras",
   description:
     "Cormex - Distribuidores autorizados de cizallas, dobladoras, cortadoras y punzonadoras industriales en México.",
+  verification: {
+    google: "qUT5zJFj5ycSLyom67zzkHZOKRwH0L5Mby4MFZiDWVw",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className="h-full">
+    <html lang="es" className="h-full" suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-bg text-ink">
         <TopBar />
         <Header />
