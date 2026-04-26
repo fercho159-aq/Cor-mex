@@ -3,18 +3,16 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden text-white"
+      className="relative overflow-hidden text-white bg-center bg-cover"
       style={{
-        backgroundColor: "#1a2980",
-        backgroundImage:
-          "radial-gradient(circle, rgba(255,255,255,0.12) 1.5px, transparent 1.5px)",
-        backgroundSize: "20px 20px",
-        minHeight: "400px",
+        backgroundImage: "url(/uploads/2022/03/dark-blue-background-wallpapers.jpg)",
+        minHeight: "500px",
       }}
     >
-      <div className="container-cmx relative py-12 md:py-16 grid md:grid-cols-2 gap-8 items-center min-h-[400px]">
+      <div className="absolute inset-0" style={{ backgroundColor: "rgba(0,0,0,0.25)" }} />
+      <div className="container-cmx relative py-12 md:py-20 grid md:grid-cols-2 gap-8 items-center min-h-[500px]">
         <div>
-          <h1 className="text-[36px] md:text-[56px] leading-[1.15] font-medium">
+          <h1 className="text-[36px] md:text-[56px] leading-[1.1] font-medium drop-shadow">
             Conoce nuestra nueva
             <br />
             Cortadora Eléctrica
@@ -30,9 +28,10 @@ export default function Hero() {
         </div>
         <div className="hidden md:flex items-center justify-end">
           <img
-            src="/uploads/2022/03/el-1.png"
+            src="/uploads/2022/03/922139ad-b1b0-43fe-93d3-072ed6ad8d8c.png"
             alt="Cortadora Eléctrica CORMEX"
-            className="max-h-[380px] w-auto object-contain"
+            className="max-h-[460px] w-auto object-contain"
+            decoding="async"
           />
         </div>
       </div>

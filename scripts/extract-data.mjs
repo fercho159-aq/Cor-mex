@@ -52,6 +52,7 @@ function mainCategoryId(ids) {
 function rewriteUrls(html) {
   if (!html) return "";
   let out = html.replaceAll(SITE_PREFIX, "");
+  out = out.replaceAll("/wp-content/uploads/", "/uploads/");
   // strip <script> and on*= attrs (shallow safety; trusted source)
   out = out.replace(/<script[\s\S]*?<\/script>/gi, "");
   out = out.replace(/\son\w+="[^"]*"/gi, "");
