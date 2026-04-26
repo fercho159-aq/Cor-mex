@@ -105,7 +105,7 @@ export default async function ProductPage({
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-block bg-[#25d366] hover:bg-[#1da851] text-white font-medium px-8 py-3 text-[14px] uppercase tracking-wide transition-colors"
+              className="inline-block bg-[#0e7c66] hover:bg-[#0a5e4d] text-white font-medium px-8 py-3 text-[14px] uppercase tracking-wide transition-colors"
             >
               WhatsApp
             </a>
